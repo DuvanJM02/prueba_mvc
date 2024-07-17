@@ -9,6 +9,7 @@ async function getTable() {
     $buttonGetTable.html(`${ svgLoading } Cargando...`);
     $divTable.html(null);
 
+    // Traer datos de la API local
     await $.ajax({
         url: urlContacts, 
         type: 'GET',
