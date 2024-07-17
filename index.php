@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba MVC</title>
+    <meta name="description" content="Prueba técnica en PHP y Javascript">
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
 </head>
 <body class="p-5 w-100 h-100 text-center">
