@@ -24,9 +24,7 @@ async function getTable() {
 }
 
 function showTable(contacts) {
-    let table;
-
-    table = `<h1>Contacts Table</h1><table class="table table-striped table-hover mt-3"><thead><tr><th scope="col">Id</th><th scope="col">Contact N°</th><th scope="col">Last Name</th><th scope="col">Created Time</th></tr></thead><tbody>`;
+    let table = `<h1>Contacts Table</h1><table class="table table-striped table-hover mt-3"><thead><tr><th scope="col">Id</th><th scope="col">Contact N°</th><th scope="col">Last Name</th><th scope="col">Created Time</th></tr></thead><tbody>`;
     contacts.forEach(contact => {
         table += `<tr><th scope="row">${ contact.id }</th><td>${ contact.contact_no }</td><td>${ contact.lastname }</td><td>${ contact.createdtime }</td></tr>`;
     });

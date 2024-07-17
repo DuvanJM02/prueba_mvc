@@ -1,11 +1,14 @@
 <?php
 
+require __DIR__ . "../../Controllers/AuthController.php";
 require __DIR__ . "../../Models/Contact.php";
 
 class ContactController {
 
-    public static function index() {
-        $url = 'https://develop1.datacrm.la/jdimate/pruebatecnica/webservice.php?operation=query&sessionName=697cbda26697bd2d096e9&query=select%20*%20from%20Contacts;';
+    public static function index(): array {
+        $sessionKey = AuthController::login();
+        // URL de la petición con la $sessionKey del servidor
+        $url = "https://develop1.datacrm.la/jdimate/pruebatecnica/webservice.php?operation=query&sessionName=$sessionKey&query=select%20*%20from%20Contacts;";
         $contacts = [];
 
         try{

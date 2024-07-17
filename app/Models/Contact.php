@@ -11,16 +11,16 @@ class Contact {
         $this->createdtime = $createdtime;
     }
 
-    public function getId(){
+    public function getId(): string{
         return $this->id;
     }
-    public function getContactNo(){
+    public function getContactNo(): string{
         return $this->contact_no;
     }
-    public function getLastname(){
+    public function getLastname(): string{
         return $this->lastname;
     }
-    public function getCreatedtime(){
+    public function getCreatedtime(): string{
         return $this->createdtime;
     }
 }
